@@ -332,8 +332,12 @@ p.cart = 866/(866+190)
 # F-score - 86.9%
 f.cart = 2*((p.cart * r.cart)/(p.cart + r.cart)) 
 
+# Logistics regression
+model <- glm (y.var.in.cart.train ~ ., data = x.vars.in.cart.train, family = binomial(link="logit"))
+summary(model)
 
-
+# odds ratio calculations- odds of being a good wine given a unit change in dependent variables 
+exp(model$coefficients)
 
 
 
