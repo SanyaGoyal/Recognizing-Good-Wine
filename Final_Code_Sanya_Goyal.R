@@ -19,8 +19,7 @@ wine_data_dummy = wine_data
 str(wine_data) #for class of each variable
 summary(wine_data) #for summary statistics of each variable
 
-# converting the class of vinatge and quality to factor variables 
-#wine_data$vintage = as.factor(wine_data$vintage)
+# converting quality to factor variables 
 wine_data$quality = as.factor(wine_data$quality)
 
 # Variables with missing values
