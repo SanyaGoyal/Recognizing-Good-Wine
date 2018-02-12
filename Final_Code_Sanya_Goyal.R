@@ -333,7 +333,6 @@ p.cart = 866/(866+190)
 f.cart = 2*((p.cart * r.cart)/(p.cart + r.cart)) 
 
 
-# Logistics regression
 
 
 
